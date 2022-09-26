@@ -1,0 +1,21 @@
+//
+//  Config.xcconfig
+//  F1 Stats
+//
+//  Created by David Melero Morant on 26/9/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//API KEY
+API_KEY = 9367f7d27a547e8edcf6ab5ceb2c2a54
+API_KEY_HEADER = x-apisports-key
+
+//URL
+URL_BASE = https:/$()/v1.formula-1.api-sports.io/
+URL_RANK = rankings/drivers?season=2022
+URL_RACES = races?type=race&season=2022
+URL_CIRCUITS = cicuits
+
+

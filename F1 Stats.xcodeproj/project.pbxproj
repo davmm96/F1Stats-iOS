@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		632C927028E2032E00F6C631 /* F1_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C926F28E2032E00F6C631 /* F1_StatsApp.swift */; };
-		632C927228E2032E00F6C631 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C927128E2032E00F6C631 /* ContentView.swift */; };
+		632C927228E2032E00F6C631 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C927128E2032E00F6C631 /* RankView.swift */; };
 		632C927428E2033000F6C631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C927328E2033000F6C631 /* Assets.xcassets */; };
 		632C927728E2033000F6C631 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C927628E2033000F6C631 /* Preview Assets.xcassets */; };
+		632C928128E23DB600F6C631 /* RankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928028E23DB600F6C631 /* RankModel.swift */; };
+		632C928528E23F6200F6C631 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928428E23F6100F6C631 /* APIService.swift */; };
+		632C928B28E243CA00F6C631 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928A28E243CA00F6C631 /* Environment.swift */; };
+		632C928E28E251A400F6C631 /* RacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928D28E251A400F6C631 /* RacesView.swift */; };
+		632C929028E2529000F6C631 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928F28E2529000F6C631 /* MainView.swift */; };
+		632C92AB28E25C8400F6C631 /* f1regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632C92A928E25C8400F6C631 /* f1regular.ttf */; };
+		632C92AC28E25C8400F6C631 /* f1bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632C92AA28E25C8400F6C631 /* f1bold.ttf */; };
+		632C92AE28E25EB700F6C631 /* RacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C92AD28E25EB700F6C631 /* RacesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		632C926C28E2032E00F6C631 /* F1 Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F1 Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632C926F28E2032E00F6C631 /* F1_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_StatsApp.swift; sourceTree = "<group>"; };
-		632C927128E2032E00F6C631 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		632C927128E2032E00F6C631 /* RankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
 		632C927328E2033000F6C631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632C927628E2033000F6C631 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		632C928028E23DB600F6C631 /* RankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankModel.swift; sourceTree = "<group>"; };
+		632C928428E23F6100F6C631 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		632C928828E241B000F6C631 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		632C928928E2437D00F6C631 /* F1-Stats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "F1-Stats-Info.plist"; sourceTree = SOURCE_ROOT; };
+		632C928A28E243CA00F6C631 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		632C928D28E251A400F6C631 /* RacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesView.swift; sourceTree = "<group>"; };
+		632C928F28E2529000F6C631 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		632C92A928E25C8400F6C631 /* f1regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = f1regular.ttf; sourceTree = "<group>"; };
+		632C92AA28E25C8400F6C631 /* f1bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = f1bold.ttf; sourceTree = "<group>"; };
+		632C92AD28E25EB700F6C631 /* RacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +69,16 @@
 		632C926E28E2032E00F6C631 /* F1 Stats */ = {
 			isa = PBXGroup;
 			children = (
+				632C92A828E25C6400F6C631 /* fonts */,
+				632C928C28E2513900F6C631 /* Views */,
+				632C928928E2437D00F6C631 /* F1-Stats-Info.plist */,
+				632C928328E23F5300F6C631 /* Services */,
+				632C927F28E23DA400F6C631 /* Model */,
 				632C926F28E2032E00F6C631 /* F1_StatsApp.swift */,
-				632C927128E2032E00F6C631 /* ContentView.swift */,
 				632C927328E2033000F6C631 /* Assets.xcassets */,
 				632C927528E2033000F6C631 /* Preview Content */,
+				632C928828E241B000F6C631 /* Config.xcconfig */,
+				632C928A28E243CA00F6C631 /* Environment.swift */,
 			);
 			path = "F1 Stats";
 			sourceTree = "<group>";
@@ -65,6 +89,42 @@
 				632C927628E2033000F6C631 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		632C927F28E23DA400F6C631 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				632C928028E23DB600F6C631 /* RankModel.swift */,
+				632C92AD28E25EB700F6C631 /* RacesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		632C928328E23F5300F6C631 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				632C928428E23F6100F6C631 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		632C928C28E2513900F6C631 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				632C927128E2032E00F6C631 /* RankView.swift */,
+				632C928D28E251A400F6C631 /* RacesView.swift */,
+				632C928F28E2529000F6C631 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		632C92A828E25C6400F6C631 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				632C92AA28E25C8400F6C631 /* f1bold.ttf */,
+				632C92A928E25C8400F6C631 /* f1regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				632C927728E2033000F6C631 /* Preview Assets.xcassets in Resources */,
+				632C92AB28E25C8400F6C631 /* f1regular.ttf in Resources */,
+				632C92AC28E25C8400F6C631 /* f1bold.ttf in Resources */,
 				632C927428E2033000F6C631 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632C927228E2032E00F6C631 /* ContentView.swift in Sources */,
+				632C927228E2032E00F6C631 /* RankView.swift in Sources */,
+				632C929028E2529000F6C631 /* MainView.swift in Sources */,
+				632C92AE28E25EB700F6C631 /* RacesModel.swift in Sources */,
+				632C928E28E251A400F6C631 /* RacesView.swift in Sources */,
+				632C928B28E243CA00F6C631 /* Environment.swift in Sources */,
+				632C928528E23F6200F6C631 /* APIService.swift in Sources */,
 				632C927028E2032E00F6C631 /* F1_StatsApp.swift in Sources */,
+				632C928128E23DB600F6C631 /* RankModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +329,7 @@
 		};
 		632C927B28E2033000F6C631 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632C928828E241B000F6C631 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -270,6 +339,8 @@
 				DEVELOPMENT_TEAM = ZSYG3B3F22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "F1-Stats-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -290,6 +361,7 @@
 		};
 		632C927C28E2033000F6C631 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632C928828E241B000F6C631 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +371,8 @@
 				DEVELOPMENT_TEAM = ZSYG3B3F22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "F1-Stats-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
