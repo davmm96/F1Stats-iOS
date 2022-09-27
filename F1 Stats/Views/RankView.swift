@@ -7,19 +7,32 @@
 
 import SwiftUI
 
+let coloredNavAppearance = UINavigationBarAppearance()
+
 struct RankView: View {
 
     @StateObject var apiService: APIService = APIService()
     
+
+    
     var body: some View {
         NavigationStack{
-                Form {
-                    ForEach(apiService.ranking, id: \.position) {
-                        position in Text(position.driver.name ?? "No name").font(Font.custom( "Formula1-Display-Regular", size: 15))
+                List {
+                    Section(header: Text("Drivers").font(Font.custom( "Formula1-Display-Regular", size: 12))){
+                        ForEach(apiService.rankingDrivers, id: \.position) {
+                            position in RankDriverItemView(position: position)
+                        }
+                    }
+                    
+                    Section(header: Text("Teams").font(Font.custom( "Formula1-Display-Regular", size: 12))){
+                        ForEach(apiService.rankingTeams, id: \.position) {
+                            position in RankTeamItemView(position: position)
+                        }
                     }
                 }.navigationTitle("Rank")
             }.onAppear{
                 apiService.getRank()
+                apiService.getRankTeams()
             }
         }
 }

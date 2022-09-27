@@ -10,29 +10,26 @@ import SwiftUI
 struct MainView: View {
     
     init() {
-        //Use this if NavigationBarTitle is with Large Font
-        UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "Formula1-Display-Bold", size: 40)!]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "Formula1-Display-Bold", size: 40)!, .foregroundColor: UIColor.red]
         
-        for family in UIFont.familyNames {
-                 print(family)
-
-                 for names in UIFont.fontNames(forFamilyName: family){
-                 print("== \(names)")
-                 }
-            }
+        UINavigationBar.appearance().titleTextAttributes = [.font : UIFont(name: "Formula1-Display-Regular", size: 15)!, .foregroundColor: UIColor.red]
     }
     
     var body: some View {
         TabView{
-            RankView()
-                    .tabItem {
-                        Label("Rank", systemImage: "trophy")
-                    }
             RacesView()
                 .tabItem {
                     Label("Races", systemImage: "flag.checkered")
                 }
-        }
+            RankView()
+                    .tabItem {
+                        Label("Rank", systemImage: "trophy")
+                    }
+            CircuitsView()
+                .tabItem {
+                    Label("Circuits", systemImage: "globe.europe.africa")
+                }
+        }.accentColor(.red)
     }
 }
 

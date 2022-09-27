@@ -7,19 +7,19 @@
 
 import Foundation
 
-struct RankingDataModel: Decodable {
-    let rank: [PositionDataModel]
+struct RankingDriversDataModel: Decodable {
+    let rank: [PositionDriverDataModel]
     enum CodingKeys: String, CodingKey {
         case response
     }
     
     init(from decoder: Decoder) throws{
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.rank = try container.decode([PositionDataModel].self, forKey: .response)
+        self.rank = try container.decode([PositionDriverDataModel].self, forKey: .response)
     }
 }
 
-struct PositionDataModel: Decodable  {
+struct PositionDriverDataModel: Decodable  {
     let position: Int
     let driver: DriverDataModel
     let team: TeamDataModel
@@ -42,3 +42,23 @@ struct TeamDataModel: Decodable  {
     let name: String?
     let logo: String?
 }
+
+struct RankingTeamsDataModel: Decodable {
+    let rankTeams: [PositionTeamDataModel]
+    enum CodingKeys: String, CodingKey {
+        case response
+    }
+    
+    init(from decoder: Decoder) throws{
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.rankTeams = try container.decode([PositionTeamDataModel].self, forKey: .response)
+    }
+}
+
+struct PositionTeamDataModel: Decodable  {
+    let position: Int
+    let team: TeamDataModel
+    let points: Int?
+    let season: Int?
+}
+

@@ -13,7 +13,8 @@ public enum Environment {
         static let apiKey = "API_KEY"
         static let apiKeyHeader = "API_KEY_HEADER"
         static let urlBase = "URL_BASE"
-        static let urlRank = "URL_RANK"
+        static let urlRankDrivers = "URL_RANK_DRIVERS"
+        static let urlRankTeams = "URL_RANK_TEAMS"
         static let urlRaces = "URL_RACES"
         static let urlCircuits = "URL_CIRCUITS"
     }
@@ -46,11 +47,18 @@ public enum Environment {
         return urlBaseString
     }()
     
-    static let urlRank: String = {
-        guard let urlRankString = Environment.infoDictionary[Keys.urlRank] as? String else {
-            fatalError("Url rank not set")
+    static let urlRankDrivers: String = {
+        guard let urlRankDriversString = Environment.infoDictionary[Keys.urlRankDrivers] as? String else {
+            fatalError("Url rank drivers not set")
         }
-        return urlRankString
+        return urlRankDriversString
+    }()
+    
+    static let urlRankTeams: String = {
+        guard let urlRankTeamsString = Environment.infoDictionary[Keys.urlRankTeams] as? String else {
+            fatalError("Url rank teams not set")
+        }
+        return urlRankTeamsString
     }()
     
     static let urlRaces: String = {

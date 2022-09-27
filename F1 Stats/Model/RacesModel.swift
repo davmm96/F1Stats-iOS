@@ -22,7 +22,7 @@ struct RacesDataModel: Decodable {
 struct RaceDataModel: Decodable  {
     let id: Int
     let competition: CompetitionDataModel
-    let circuit: CircuitDataModel
+    let circuit: CircuitRaceDataModel
     let season: Int?
     let type: String?
     let laps: LapsDataModel
@@ -45,7 +45,7 @@ struct LocationDataModel: Decodable  {
     let city: String?
 }
 
-struct CircuitDataModel: Decodable  {
+struct CircuitRaceDataModel: Decodable  {
     let id: Int
     let name: String?
     let image: String?

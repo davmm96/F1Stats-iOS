@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631BA83C28E2E37300BEF91F /* CircuitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA83B28E2E37200BEF91F /* CircuitsView.swift */; };
+		631BA83E28E2E45400BEF91F /* CircuitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA83D28E2E45400BEF91F /* CircuitsModel.swift */; };
+		631BA84028E3421400BEF91F /* RankDriverItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA83F28E3421400BEF91F /* RankDriverItemView.swift */; };
+		631BA84228E3466C00BEF91F /* RankTeamItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA84128E3466C00BEF91F /* RankTeamItemView.swift */; };
 		632C927028E2032E00F6C631 /* F1_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C926F28E2032E00F6C631 /* F1_StatsApp.swift */; };
 		632C927228E2032E00F6C631 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C927128E2032E00F6C631 /* RankView.swift */; };
 		632C927428E2033000F6C631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C927328E2033000F6C631 /* Assets.xcassets */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		631BA83B28E2E37200BEF91F /* CircuitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitsView.swift; sourceTree = "<group>"; };
+		631BA83D28E2E45400BEF91F /* CircuitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitsModel.swift; sourceTree = "<group>"; };
+		631BA83F28E3421400BEF91F /* RankDriverItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankDriverItemView.swift; sourceTree = "<group>"; };
+		631BA84128E3466C00BEF91F /* RankTeamItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTeamItemView.swift; sourceTree = "<group>"; };
 		632C926C28E2032E00F6C631 /* F1 Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F1 Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632C926F28E2032E00F6C631 /* F1_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_StatsApp.swift; sourceTree = "<group>"; };
 		632C927128E2032E00F6C631 /* RankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
@@ -96,6 +104,7 @@
 			children = (
 				632C928028E23DB600F6C631 /* RankModel.swift */,
 				632C92AD28E25EB700F6C631 /* RacesModel.swift */,
+				631BA83D28E2E45400BEF91F /* CircuitsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +123,9 @@
 				632C927128E2032E00F6C631 /* RankView.swift */,
 				632C928D28E251A400F6C631 /* RacesView.swift */,
 				632C928F28E2529000F6C631 /* MainView.swift */,
+				631BA83B28E2E37200BEF91F /* CircuitsView.swift */,
+				631BA83F28E3421400BEF91F /* RankDriverItemView.swift */,
+				631BA84128E3466C00BEF91F /* RankTeamItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,12 +211,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631BA83C28E2E37300BEF91F /* CircuitsView.swift in Sources */,
 				632C927228E2032E00F6C631 /* RankView.swift in Sources */,
+				631BA84228E3466C00BEF91F /* RankTeamItemView.swift in Sources */,
+				631BA84028E3421400BEF91F /* RankDriverItemView.swift in Sources */,
 				632C929028E2529000F6C631 /* MainView.swift in Sources */,
 				632C92AE28E25EB700F6C631 /* RacesModel.swift in Sources */,
 				632C928E28E251A400F6C631 /* RacesView.swift in Sources */,
 				632C928B28E243CA00F6C631 /* Environment.swift in Sources */,
 				632C928528E23F6200F6C631 /* APIService.swift in Sources */,
+				631BA83E28E2E45400BEF91F /* CircuitsModel.swift in Sources */,
 				632C927028E2032E00F6C631 /* F1_StatsApp.swift in Sources */,
 				632C928128E23DB600F6C631 /* RankModel.swift in Sources */,
 			);
