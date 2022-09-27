@@ -13,11 +13,12 @@ struct CircuitsView: View {
     
     var body: some View {
         NavigationStack{
-                Form {
+                List {
                     ForEach(apiService.circuits, id: \.id) {
-                        circuit in Text(circuit.name ?? "No name").font(Font.custom( "Formula1-Display-Regular", size: 15))
+                        circuit in CircuitItemView(circuit: circuit)
                     }
                 }.navigationTitle("Circuits")
+                .listStyle(InsetGroupedListStyle())
             }.onAppear{
                 apiService.getCircuits()
             }

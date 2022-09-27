@@ -22,6 +22,8 @@ struct RankDriverItemView: View {
                             .scaledToFill()
                             .clipped()
                             .frame(maxWidth: 40, maxHeight: 40)
+                            .clipShape(Circle())
+                            .shadow(radius: 10)
                     case .failure:
                         Image(systemName: "photo")
                     @unknown default:

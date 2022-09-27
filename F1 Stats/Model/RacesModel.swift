@@ -53,7 +53,7 @@ struct CircuitRaceDataModel: Decodable  {
 
 struct LapsDataModel: Decodable  {
     let current: Int?
-    let total: Int?
+    let total: Int
 }
 
 struct FastestLapDataModel: Decodable  {

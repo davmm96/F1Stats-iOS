@@ -11,17 +11,25 @@ struct RacesView: View {
 
     @StateObject var apiService: APIService = APIService()
     
+    let releaseDate = Date()
+    
+    static let stackDateFormat: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MMM/yyyy HH:mm"
+        return formatter
+    }()
+    
     var body: some View {
-            NavigationStack{
-                Form {
-                    ForEach(apiService.races, id: \.id) {
-                        race in Text(race.competition.name ?? "No name").font(Font.custom( "Formula1-Display-Regular", size: 15))
-                    }
-                }.navigationTitle("Races")
-            }.onAppear{
-                apiService.getRaces()
-            }
+        NavigationStack{
+            List{
+                ForEach(apiService.races, id: \.id) {
+                    race in RaceItemView(race: race)
+                }
+            }.navigationTitle("Races")
+        }.onAppear{
+            apiService.getRaces()
         }
+    }
 }
 
 struct RacesView_Previews: PreviewProvider {
@@ -29,3 +37,4 @@ struct RacesView_Previews: PreviewProvider {
         RacesView()
     }
 }
+
