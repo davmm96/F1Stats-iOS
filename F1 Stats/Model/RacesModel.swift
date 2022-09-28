@@ -36,7 +36,7 @@ struct RaceDataModel: Decodable  {
     static let example = RaceDataModel(
         id: 1,
         competition: CompetitionDataModel(id: 1, name: "Albert Park",location: LocationDataModel(country: "Spain", city: "Barcelona")),
-        circuit: CircuitRaceDataModel(id: 1, name: "Circuit", image: ""),
+        circuit: CircuitRaceDataModel(id: 1, name: "Marina Bay Street Circuit", image: ""),
         season: 2022,
         type: "Race",
         laps: LapsDataModel(current: 54, total: 70),
@@ -45,7 +45,7 @@ struct RaceDataModel: Decodable  {
         timezone: "",
         date: "",
         weather: "",
-        status: "Completed")
+        status: "Scheduled")
 }
 
 struct CompetitionDataModel: Decodable  {
@@ -78,3 +78,10 @@ struct FastestLapDataModel: Decodable  {
 struct DriverLapDataModel: Decodable {
     let id: Int?
 }
+
+enum StatusRace: String, CaseIterable{
+    case completed = "Completed"
+    case scheduled = "Scheduled"
+    case cancelled = "Cancelled"
+}
+

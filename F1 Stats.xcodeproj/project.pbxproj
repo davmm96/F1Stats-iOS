@@ -27,6 +27,8 @@
 		632C92AB28E25C8400F6C631 /* f1regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632C92A928E25C8400F6C631 /* f1regular.ttf */; };
 		632C92AC28E25C8400F6C631 /* f1bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632C92AA28E25C8400F6C631 /* f1bold.ttf */; };
 		632C92AE28E25EB700F6C631 /* RacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C92AD28E25EB700F6C631 /* RacesModel.swift */; };
+		63EB62D928E497320016161F /* TitleOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB62D828E497320016161F /* TitleOverlay.swift */; };
+		63EB62DB28E497BA0016161F /* InfoCircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB62DA28E497BA0016161F /* InfoCircuitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		632C92A928E25C8400F6C631 /* f1regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = f1regular.ttf; sourceTree = "<group>"; };
 		632C92AA28E25C8400F6C631 /* f1bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = f1bold.ttf; sourceTree = "<group>"; };
 		632C92AD28E25EB700F6C631 /* RacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesModel.swift; sourceTree = "<group>"; };
+		63EB62D828E497320016161F /* TitleOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleOverlay.swift; sourceTree = "<group>"; };
+		63EB62DA28E497BA0016161F /* InfoCircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCircuitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 				631BA84928E43FB200BEF91F /* RaceChooseView.swift */,
 				631BA84328E3527100BEF91F /* RaceItemView.swift */,
 				631BA84728E3675300BEF91F /* RaceDetailView.swift */,
+				63EB62D828E497320016161F /* TitleOverlay.swift */,
+				63EB62DA28E497BA0016161F /* InfoCircuitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,8 +236,10 @@
 				631BA84628E361FB00BEF91F /* CircuitItemView.swift in Sources */,
 				631BA84028E3421400BEF91F /* RankDriverItemView.swift in Sources */,
 				631BA84A28E43FB200BEF91F /* RaceChooseView.swift in Sources */,
+				63EB62D928E497320016161F /* TitleOverlay.swift in Sources */,
 				632C929028E2529000F6C631 /* MainView.swift in Sources */,
 				632C92AE28E25EB700F6C631 /* RacesModel.swift in Sources */,
+				63EB62DB28E497BA0016161F /* InfoCircuitView.swift in Sources */,
 				632C928E28E251A400F6C631 /* RacesView.swift in Sources */,
 				632C928B28E243CA00F6C631 /* Environment.swift in Sources */,
 				632C928528E23F6200F6C631 /* APIService.swift in Sources */,
