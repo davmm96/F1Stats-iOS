@@ -82,12 +82,12 @@ struct RaceDetailView: View {
                             .padding(.top, 60)
                             .scaledToFill()
                             .clipped()
-                            .frame(maxWidth: 300, maxHeight: 300)
+                            .frame(maxWidth: 200, maxHeight: 200)
                             .onTapGesture {
                                 showInfo.toggle()
                             }
                             .sheet(isPresented: $showInfo) {
-                                InfoCircuitView(info: race)
+                                InfoCircuitView(distance: race.distance ?? "0 Kms", laps: race.laps.total, image: image)
                             }
                     case .failure:
                         Image(systemName: "photo")
