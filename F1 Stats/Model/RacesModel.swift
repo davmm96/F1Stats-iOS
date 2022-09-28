@@ -32,6 +32,20 @@ struct RaceDataModel: Decodable  {
     let date: String?
     let weather: String?
     let status: String?
+    
+    static let example = RaceDataModel(
+        id: 1,
+        competition: CompetitionDataModel(id: 1, name: "Albert Park",location: LocationDataModel(country: "Spain", city: "Barcelona")),
+        circuit: CircuitRaceDataModel(id: 1, name: "Circuit", image: ""),
+        season: 2022,
+        type: "Race",
+        laps: LapsDataModel(current: 54, total: 70),
+        fastest_lap: FastestLapDataModel(driver: nil, time: ""),
+        distance: "4567 km",
+        timezone: "",
+        date: "",
+        weather: "",
+        status: "Completed")
 }
 
 struct CompetitionDataModel: Decodable  {

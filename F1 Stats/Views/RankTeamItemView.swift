@@ -43,3 +43,10 @@ struct RankTeamItemView: View {
     }
 }
 
+struct RankTeamItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        RankTeamItemView(position: PositionTeamDataModel.example)
+            .previewLayout(.sizeThatFits)
+    }
+}
+

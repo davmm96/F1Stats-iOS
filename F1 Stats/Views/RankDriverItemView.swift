@@ -48,3 +48,10 @@ struct RankDriverItemView: View {
         }
     }
 }
+
+struct RankDriverItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        RankDriverItemView(position: PositionDriverDataModel.example)
+            .previewLayout(.sizeThatFits)
+    }
+}

@@ -18,3 +18,10 @@ struct RaceDetailView: View {
         }.background{LinearGradient(colors: [.red, .white], startPoint: .topLeading, endPoint: .bottomTrailing)}
     }
 }
+
+struct RaceDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        RaceDetailView(race: RaceDataModel.example)
+            .previewLayout(.sizeThatFits)
+    }
+}

@@ -14,6 +14,7 @@
 		631BA84428E3527100BEF91F /* RaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA84328E3527100BEF91F /* RaceItemView.swift */; };
 		631BA84628E361FB00BEF91F /* CircuitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA84528E361FB00BEF91F /* CircuitItemView.swift */; };
 		631BA84828E3675300BEF91F /* RaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA84728E3675300BEF91F /* RaceDetailView.swift */; };
+		631BA84A28E43FB200BEF91F /* RaceChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA84928E43FB200BEF91F /* RaceChooseView.swift */; };
 		632C927028E2032E00F6C631 /* F1_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C926F28E2032E00F6C631 /* F1_StatsApp.swift */; };
 		632C927228E2032E00F6C631 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C927128E2032E00F6C631 /* RankView.swift */; };
 		632C927428E2033000F6C631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C927328E2033000F6C631 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		631BA84328E3527100BEF91F /* RaceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceItemView.swift; sourceTree = "<group>"; };
 		631BA84528E361FB00BEF91F /* CircuitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitItemView.swift; sourceTree = "<group>"; };
 		631BA84728E3675300BEF91F /* RaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailView.swift; sourceTree = "<group>"; };
+		631BA84928E43FB200BEF91F /* RaceChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceChooseView.swift; sourceTree = "<group>"; };
 		632C926C28E2032E00F6C631 /* F1 Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F1 Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632C926F28E2032E00F6C631 /* F1_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_StatsApp.swift; sourceTree = "<group>"; };
 		632C927128E2032E00F6C631 /* RankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
@@ -85,14 +87,14 @@
 			children = (
 				632C92A828E25C6400F6C631 /* fonts */,
 				632C928C28E2513900F6C631 /* Views */,
-				632C928928E2437D00F6C631 /* F1-Stats-Info.plist */,
 				632C928328E23F5300F6C631 /* Services */,
 				632C927F28E23DA400F6C631 /* Model */,
 				632C926F28E2032E00F6C631 /* F1_StatsApp.swift */,
-				632C927328E2033000F6C631 /* Assets.xcassets */,
-				632C927528E2033000F6C631 /* Preview Content */,
-				632C928828E241B000F6C631 /* Config.xcconfig */,
 				632C928A28E243CA00F6C631 /* Environment.swift */,
+				632C927328E2033000F6C631 /* Assets.xcassets */,
+				632C928828E241B000F6C631 /* Config.xcconfig */,
+				632C928928E2437D00F6C631 /* F1-Stats-Info.plist */,
+				632C927528E2033000F6C631 /* Preview Content */,
 			);
 			path = "F1 Stats";
 			sourceTree = "<group>";
@@ -126,13 +128,14 @@
 		632C928C28E2513900F6C631 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				632C927128E2032E00F6C631 /* RankView.swift */,
-				631BA84528E361FB00BEF91F /* CircuitItemView.swift */,
-				632C928D28E251A400F6C631 /* RacesView.swift */,
 				632C928F28E2529000F6C631 /* MainView.swift */,
 				631BA83B28E2E37200BEF91F /* CircuitsView.swift */,
+				631BA84528E361FB00BEF91F /* CircuitItemView.swift */,
+				632C927128E2032E00F6C631 /* RankView.swift */,
 				631BA83F28E3421400BEF91F /* RankDriverItemView.swift */,
 				631BA84128E3466C00BEF91F /* RankTeamItemView.swift */,
+				632C928D28E251A400F6C631 /* RacesView.swift */,
+				631BA84928E43FB200BEF91F /* RaceChooseView.swift */,
 				631BA84328E3527100BEF91F /* RaceItemView.swift */,
 				631BA84728E3675300BEF91F /* RaceDetailView.swift */,
 			);
@@ -226,6 +229,7 @@
 				631BA84228E3466C00BEF91F /* RankTeamItemView.swift in Sources */,
 				631BA84628E361FB00BEF91F /* CircuitItemView.swift in Sources */,
 				631BA84028E3421400BEF91F /* RankDriverItemView.swift in Sources */,
+				631BA84A28E43FB200BEF91F /* RaceChooseView.swift in Sources */,
 				632C929028E2529000F6C631 /* MainView.swift in Sources */,
 				632C92AE28E25EB700F6C631 /* RacesModel.swift in Sources */,
 				632C928E28E251A400F6C631 /* RacesView.swift in Sources */,

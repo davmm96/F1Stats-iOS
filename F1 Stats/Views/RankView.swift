@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-let coloredNavAppearance = UINavigationBarAppearance()
-
 struct RankView: View {
 
     @StateObject var apiService: APIService = APIService()

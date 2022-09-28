@@ -35,3 +35,10 @@ struct RaceItemView: View {
     }
 }
 
+struct RaceItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        RaceItemView(race: RaceDataModel.example)
+            .previewLayout(.sizeThatFits)
+    }
+}
+
