@@ -9,14 +9,15 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 //API KEY
-API_KEY = c2900637fc3de6610fbb9a4e997b9622
+API_KEY = 7cbd4ede846c2a26675a0ac08b25cc2d
 API_KEY_HEADER = x-apisports-key
 
 //URL
 URL_BASE = https:/$()/v1.formula-1.api-sports.io/
 URL_RANK_DRIVERS = rankings/drivers?season=2022
 URL_RANK_TEAMS = rankings/teams?season=2022
-URL_RACES = races?type=race&season=2022
+URL_RACES = races?type=race&next=30&season=2022
+URL_PAST_RACES = races?type=race&last=30&season=2022
 URL_CIRCUITS = circuits
 
 

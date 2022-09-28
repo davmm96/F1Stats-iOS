@@ -13,6 +13,7 @@
 		631BA84228E3466C00BEF91F /* RankTeamItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA84128E3466C00BEF91F /* RankTeamItemView.swift */; };
 		631BA84428E3527100BEF91F /* RaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA84328E3527100BEF91F /* RaceItemView.swift */; };
 		631BA84628E361FB00BEF91F /* CircuitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA84528E361FB00BEF91F /* CircuitItemView.swift */; };
+		631BA84828E3675300BEF91F /* RaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631BA84728E3675300BEF91F /* RaceDetailView.swift */; };
 		632C927028E2032E00F6C631 /* F1_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C926F28E2032E00F6C631 /* F1_StatsApp.swift */; };
 		632C927228E2032E00F6C631 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C927128E2032E00F6C631 /* RankView.swift */; };
 		632C927428E2033000F6C631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C927328E2033000F6C631 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		631BA84128E3466C00BEF91F /* RankTeamItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTeamItemView.swift; sourceTree = "<group>"; };
 		631BA84328E3527100BEF91F /* RaceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceItemView.swift; sourceTree = "<group>"; };
 		631BA84528E361FB00BEF91F /* CircuitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitItemView.swift; sourceTree = "<group>"; };
+		631BA84728E3675300BEF91F /* RaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailView.swift; sourceTree = "<group>"; };
 		632C926C28E2032E00F6C631 /* F1 Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F1 Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632C926F28E2032E00F6C631 /* F1_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_StatsApp.swift; sourceTree = "<group>"; };
 		632C927128E2032E00F6C631 /* RankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				631BA83F28E3421400BEF91F /* RankDriverItemView.swift */,
 				631BA84128E3466C00BEF91F /* RankTeamItemView.swift */,
 				631BA84328E3527100BEF91F /* RaceItemView.swift */,
+				631BA84728E3675300BEF91F /* RaceDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631BA84828E3675300BEF91F /* RaceDetailView.swift in Sources */,
 				631BA83C28E2E37300BEF91F /* CircuitsView.swift in Sources */,
 				632C927228E2032E00F6C631 /* RankView.swift in Sources */,
 				631BA84228E3466C00BEF91F /* RankTeamItemView.swift in Sources */,

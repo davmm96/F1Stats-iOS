@@ -16,6 +16,7 @@ public enum Environment {
         static let urlRankDrivers = "URL_RANK_DRIVERS"
         static let urlRankTeams = "URL_RANK_TEAMS"
         static let urlRaces = "URL_RACES"
+        static let urlPastRaces = "URL_PAST_RACES"
         static let urlCircuits = "URL_CIRCUITS"
     }
     
@@ -66,6 +67,13 @@ public enum Environment {
             fatalError("Url races not set")
         }
         return urlRacesString
+    }()
+    
+    static let urlPastRaces: String = {
+        guard let urlPastRacesString = Environment.infoDictionary[Keys.urlPastRaces] as? String else {
+            fatalError("Url races not set")
+        }
+        return urlPastRacesString
     }()
     
     static let urlCircuits: String = {

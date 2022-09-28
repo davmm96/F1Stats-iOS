@@ -12,7 +12,6 @@ struct RaceItemView: View {
     
     var body: some View {
         HStack{
-            
             VStack(alignment: .leading) {
                 Text("\(Int(race.laps.total)) laps" )
                     .font(Font.custom( "Formula1-Display-Bold", size: 15))
