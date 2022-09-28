@@ -18,6 +18,7 @@ public enum Environment {
         static let urlRaces = "URL_RACES"
         static let urlPastRaces = "URL_PAST_RACES"
         static let urlCircuits = "URL_CIRCUITS"
+        static let urlDriver = "URL_DRIVER"
     }
     
     private static let infoDictionary: [String: Any] = {
@@ -81,6 +82,13 @@ public enum Environment {
             fatalError("Url circuits not set")
         }
         return urlCircuitsString
+    }()
+    
+    static let urlDriver: String = {
+        guard let urlDriverString = Environment.infoDictionary[Keys.urlDriver] as? String else {
+            fatalError("Url driver not set")
+        }
+        return urlDriverString
     }()
     
 }

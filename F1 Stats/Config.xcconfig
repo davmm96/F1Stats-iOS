@@ -9,7 +9,7 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 //API KEY
-API_KEY = 514e853b262cec6b43e9b3cec6ae6e58
+API_KEY = c7e05d22bc405a06a2ffdf8e7938f979
 API_KEY_HEADER = x-apisports-key
 
 //URL
@@ -19,5 +19,4 @@ URL_RANK_TEAMS = rankings/teams?season=2022
 URL_RACES = races?type=race&next=30&season=2022
 URL_PAST_RACES = races?type=race&last=30&season=2022
 URL_CIRCUITS = circuits
-
-
+URL_DRIVER = drivers?id=

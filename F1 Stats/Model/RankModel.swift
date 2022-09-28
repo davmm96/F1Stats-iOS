@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct RankingDriversDataModel: Decodable {
     let rank: [PositionDriverDataModel]
@@ -44,6 +43,8 @@ struct DriverDataModel: Decodable  {
     let abbr: String?
     let number: Int?
     let image: String?
+    
+    static let example = DriverDataModel(id: 1, name: "Max Verstappen", abbr: "Ver", number: 1, image: "")
 }
 
 struct TeamDataModel: Decodable  {

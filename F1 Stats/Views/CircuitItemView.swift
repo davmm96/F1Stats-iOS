@@ -27,7 +27,7 @@ struct CircuitItemView: View {
                         VStack(alignment: .leading){
                             Text("Circuit length")
                                 .font(Font.custom( "Formula1-Display-Regular", size: 12))
-                                .padding(.init(top: 0, leading: 0, bottom: 3, trailing: 0))
+                                .padding(.bottom, 3)
                                 .foregroundColor(Color(white: 0.4))
                             Text(circuit.length ?? "No length data")
                                 .font(Font.custom( "Formula1-Display-Bold", size: 15))
@@ -36,7 +36,7 @@ struct CircuitItemView: View {
                         VStack(alignment: .leading){
                             Text("Laps")
                                 .font(Font.custom( "Formula1-Display-Regular", size: 12))
-                                .padding(.init(top: 0, leading: 0, bottom: 3, trailing: 0))
+                                .padding(.bottom, 3)
                                 .foregroundColor(Color(white: 0.4))
                             Text(circuit.laps.flatMap(String.init) ?? "No laps data")
                                 .font(Font.custom( "Formula1-Display-Bold", size: 15))
@@ -45,7 +45,7 @@ struct CircuitItemView: View {
                         VStack(alignment: .leading){
                             Text("First Grand Prix")
                                 .font(Font.custom( "Formula1-Display-Regular", size: 12))
-                                .padding(.init(top: 0, leading: 0, bottom: 3, trailing: 0))
+                                .padding(.bottom, 3)
                                 .foregroundColor(Color(white: 0.4))
                             Text(circuit.first_grand_prix.flatMap(String.init) ?? "No first data")
                                 .font(Font.custom( "Formula1-Display-Bold", size: 15))
@@ -54,15 +54,15 @@ struct CircuitItemView: View {
                     VStack(alignment: .leading){
                         Text("Lap record")
                             .font(Font.custom( "Formula1-Display-Regular", size: 12))
-                            .padding(.init(top: 0, leading: 0, bottom: 3, trailing: 0))
+                            .padding(.bottom, 3)
                             .foregroundColor(Color(white: 0.4))
                         Text(circuit.lap_record?.time ?? "No time data")
                             .font(Font.custom( "Formula1-Display-Bold", size: 15))
-                            .padding(.init(top: 0, leading: 0, bottom: 3, trailing: 0))
+                            .padding(.bottom, 3)
                             .foregroundColor(.red)
                         Text(circuit.lap_record?.driver ?? "No driver data")
                             .font(Font.custom( "Formula1-Display-Regular", size: 10))
-                            .padding(.init(top: 0, leading: 0, bottom: 8, trailing: 0))
+                            .padding(.bottom, 3)
                             .foregroundColor(Color(white: 0.4))
                     }
                             
@@ -71,7 +71,7 @@ struct CircuitItemView: View {
                                 VStack(alignment: .leading){
                                     Text("Circuit length")
                                         .font(Font.custom( "Formula1-Display-Regular", size: 12))
-                                        .padding(.init(top: 0, leading: 0, bottom: 3, trailing: 0))
+                                        .padding(.bottom, 3)
                                         .foregroundColor(Color(white: 0.4))
                                     Text(circuit.length ?? "No length data")
                                         .font(Font.custom( "Formula1-Display-Bold", size: 15))
@@ -80,7 +80,7 @@ struct CircuitItemView: View {
                                 VStack(alignment: .leading){
                                     Text("Laps")
                                         .font(Font.custom( "Formula1-Display-Regular", size: 12))
-                                        .padding(.init(top: 0, leading: 0, bottom: 3, trailing: 0))
+                                        .padding(.bottom, 3)
                                         .foregroundColor(Color(white: 0.4))
                                     Text(circuit.laps.flatMap(String.init) ?? "No laps data")
                                         .font(Font.custom( "Formula1-Display-Bold", size: 15))
@@ -89,7 +89,7 @@ struct CircuitItemView: View {
                                 VStack(alignment: .leading){
                                     Text("First Grand Prix")
                                         .font(Font.custom( "Formula1-Display-Regular", size: 12))
-                                        .padding(.init(top: 0, leading: 0, bottom: 3, trailing: 0))
+                                        .padding(.bottom, 3)
                                         .foregroundColor(Color(white: 0.4))
                                     Text(circuit.first_grand_prix.flatMap(String.init) ?? "No first data")
                                         .font(Font.custom( "Formula1-Display-Bold", size: 15))
@@ -98,15 +98,15 @@ struct CircuitItemView: View {
                                 VStack(alignment: .leading){
                                     Text("Lap record")
                                         .font(Font.custom( "Formula1-Display-Regular", size: 12))
-                                        .padding(.init(top: 0, leading: 0, bottom: 3, trailing: 0))
+                                        .padding(.bottom, 3)
                                         .foregroundColor(Color(white: 0.4))
                                     Text(circuit.lap_record?.time ?? "No time data")
                                         .font(Font.custom( "Formula1-Display-Bold", size: 15))
-                                        .padding(.init(top: 0, leading: 0, bottom: 3, trailing: 0))
+                                        .padding(.bottom, 3)
                                         .foregroundColor(.red)
                                     Text(circuit.lap_record?.driver ?? "No driver data")
                                         .font(Font.custom( "Formula1-Display-Regular", size: 10))
-                                        .padding(.init(top: 0, leading: 0, bottom: 8, trailing: 0))
+                                        .padding(.bottom, 3)
                                         .foregroundColor(Color(white: 0.4))
                                 }
                             }

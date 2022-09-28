@@ -14,6 +14,35 @@ final class APIService: ObservableObject {
     @Published var rankingDrivers: [PositionDriverDataModel] = []
     @Published var rankingTeams: [PositionTeamDataModel] = []
     @Published var circuits: [CircuitDataModel] = []
+    @Published var driver: [DriverDetailDataModel] = []
+    
+    func getDriver(id: Int){
+        
+        let idString = "\(id)"
+        
+        guard let url = URL(string: Environment.urlBase + Environment.urlDriver + idString) else {
+            fatalError("Invalid URL")
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.setValue(Environment.apiKey, forHTTPHeaderField: Environment.apiKeyHeader)
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let _ = error {
+                print("Error")
+            }
+            
+            if let data = data,
+               let httpResponse = response as? HTTPURLResponse,
+               httpResponse.statusCode == 200 {
+                let driverDataModel = try! JSONDecoder().decode(DriverResponseDataModel.self, from: data)
+                DispatchQueue.main.async {
+                    self.driver = driverDataModel.driver
+                }
+            }
+        }.resume()
+    }
     
     func getRaces(){
         
