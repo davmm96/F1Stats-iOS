@@ -6,11 +6,21 @@
 //
 
 import SwiftUI
+import SwiftUIToast
 
 struct SettingsView: View {
     @EnvironmentObject var soundPlayer: SoundPlayer
     @AppStorage("music") private var playMusic = true
     @AppStorage("darkMode") private var darkMode = false
+    
+    let options = ToastOptions(
+        image: Image(systemName: "info"),
+        title: "Version",
+        subtitle: "1.0",
+        position: .bottom,
+        duration: 10,
+        dismissible: true
+        )
     
     var body: some View {
         NavigationStack{
@@ -22,11 +32,15 @@ struct SettingsView: View {
                 
                 Toggle("Dark theme", isOn: $darkMode)
                 
+                ToastView(options: options)
+                    .padding()
+                
             }.navigationTitle("Settings")
                 .padding(80)
             Spacer()
         }
     }
+
 }
 
 struct SettingsView_Previews: PreviewProvider {
