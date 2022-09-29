@@ -65,7 +65,7 @@ struct RankTeamItemView: View {
                         .font(Font.custom( "Formula1-Display-Regular", size: 11))
                         .padding(7)
                 }
-            }.background(Color(white: 0.9))
+            }.background(Color("GrayTitle"))
             .opacity(0.8)
             .cornerRadius(14.0)
             .padding(4)
