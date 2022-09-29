@@ -20,13 +20,13 @@ final class APIService: ObservableObject {
         
         let idString = "\(id)"
         
-        guard let url = URL(string: Environment.urlBase + Environment.urlDriver + idString) else {
+        guard let url = URL(string: EnvironmentData.urlBase + EnvironmentData.urlDriver + idString) else {
             fatalError("Invalid URL")
         }
 
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue(Environment.apiKey, forHTTPHeaderField: Environment.apiKeyHeader)
+        request.setValue(EnvironmentData.apiKey, forHTTPHeaderField: EnvironmentData.apiKeyHeader)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let _ = error {
@@ -46,13 +46,13 @@ final class APIService: ObservableObject {
     
     func getRaces(){
         
-        guard let url = URL(string: Environment.urlBase + Environment.urlRaces) else {
+        guard let url = URL(string: EnvironmentData.urlBase + EnvironmentData.urlRaces) else {
             fatalError("Invalid URL")
         }
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue(Environment.apiKey, forHTTPHeaderField: Environment.apiKeyHeader)
+        request.setValue(EnvironmentData.apiKey, forHTTPHeaderField: EnvironmentData.apiKeyHeader)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let _ = error {
@@ -72,13 +72,13 @@ final class APIService: ObservableObject {
     
     func getPastRaces(){
         
-        guard let url = URL(string: Environment.urlBase + Environment.urlPastRaces) else {
+        guard let url = URL(string: EnvironmentData.urlBase + EnvironmentData.urlPastRaces) else {
             fatalError("Invalid URL")
         }
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue(Environment.apiKey, forHTTPHeaderField: Environment.apiKeyHeader)
+        request.setValue(EnvironmentData.apiKey, forHTTPHeaderField: EnvironmentData.apiKeyHeader)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let _ = error {
@@ -98,13 +98,13 @@ final class APIService: ObservableObject {
     
     func getRankDrivers(){
         
-        guard let url = URL(string: Environment.urlBase + Environment.urlRankDrivers) else {
+        guard let url = URL(string: EnvironmentData.urlBase + EnvironmentData.urlRankDrivers) else {
             fatalError("Invalid URL")
         }
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue(Environment.apiKey, forHTTPHeaderField: Environment.apiKeyHeader)
+        request.setValue(EnvironmentData.apiKey, forHTTPHeaderField: EnvironmentData.apiKeyHeader)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let _ = error {
@@ -124,13 +124,13 @@ final class APIService: ObservableObject {
     
     func getRankTeams(){
         
-        guard let url = URL(string: Environment.urlBase + Environment.urlRankTeams) else {
+        guard let url = URL(string: EnvironmentData.urlBase + EnvironmentData.urlRankTeams) else {
             fatalError("Invalid URL")
         }
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue(Environment.apiKey, forHTTPHeaderField: Environment.apiKeyHeader)
+        request.setValue(EnvironmentData.apiKey, forHTTPHeaderField: EnvironmentData.apiKeyHeader)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let _ = error {
@@ -150,13 +150,13 @@ final class APIService: ObservableObject {
     
     func getRank(){
         
-        guard let url = URL(string: Environment.urlBase + Environment.urlRankDrivers) else {
+        guard let url = URL(string: EnvironmentData.urlBase + EnvironmentData.urlRankDrivers) else {
             fatalError("Invalid URL")
         }
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue(Environment.apiKey, forHTTPHeaderField: Environment.apiKeyHeader)
+        request.setValue(EnvironmentData.apiKey, forHTTPHeaderField: EnvironmentData.apiKeyHeader)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let _ = error {
@@ -176,13 +176,13 @@ final class APIService: ObservableObject {
     
     func getCircuits(){
         
-        guard let url = URL(string: Environment.urlBase + Environment.urlCircuits) else {
+        guard let url = URL(string: EnvironmentData.urlBase + EnvironmentData.urlCircuits) else {
             fatalError("Invalid URL")
         }
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue(Environment.apiKey, forHTTPHeaderField: Environment.apiKeyHeader)
+        request.setValue(EnvironmentData.apiKey, forHTTPHeaderField: EnvironmentData.apiKeyHeader)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let _ = error {

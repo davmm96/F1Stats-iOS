@@ -15,10 +15,22 @@ enum TypeRaces: String, CaseIterable{
 
 struct RacesView: View {
     @State private var selectedRace: TypeRaces = .upcoming
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    
+    var horizontallyConstrained: Bool {
+        return horizontalSizeClass == .compact
+    }
     
     init() {
-        UISegmentedControl.appearance().setTitleTextAttributes([.font : UIFont(name: "Formula1-Display-Bold", size: 12)!,.foregroundColor : UIColor.black], for: .selected)
-        UISegmentedControl.appearance().setTitleTextAttributes([.font : UIFont(name: "Formula1-Display-Regular", size: 12)!,.foregroundColor : UIColor.black], for: .normal)
+        
+        if horizontallyConstrained {
+            UISegmentedControl.appearance().setTitleTextAttributes([.font : UIFont(name: "Formula1-Display-Bold", size: 12)!,.foregroundColor : UIColor.red], for: .selected)
+            UISegmentedControl.appearance().setTitleTextAttributes([.font : UIFont(name: "Formula1-Display-Regular", size: 12)!,.foregroundColor : UIColor.red], for: .normal)
+        } else {
+            UISegmentedControl.appearance().setTitleTextAttributes([.font : UIFont(name: "Formula1-Display-Bold", size: 18)!,.foregroundColor : UIColor.red], for: .selected)
+            UISegmentedControl.appearance().setTitleTextAttributes([.font : UIFont(name: "Formula1-Display-Regular", size: 18)!,.foregroundColor : UIColor.red], for: .normal)
+        }
+        
     }
     
     var body: some View {

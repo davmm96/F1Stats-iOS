@@ -21,7 +21,7 @@
 		632C927728E2033000F6C631 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C927628E2033000F6C631 /* Preview Assets.xcassets */; };
 		632C928128E23DB600F6C631 /* RankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928028E23DB600F6C631 /* RankModel.swift */; };
 		632C928528E23F6200F6C631 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928428E23F6100F6C631 /* APIService.swift */; };
-		632C928B28E243CA00F6C631 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928A28E243CA00F6C631 /* Environment.swift */; };
+		632C928B28E243CA00F6C631 /* EnvironmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928A28E243CA00F6C631 /* EnvironmentData.swift */; };
 		632C928E28E251A400F6C631 /* RacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928D28E251A400F6C631 /* RacesView.swift */; };
 		632C929028E2529000F6C631 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928F28E2529000F6C631 /* MainView.swift */; };
 		632C92AB28E25C8400F6C631 /* f1regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632C92A928E25C8400F6C631 /* f1regular.ttf */; };
@@ -54,7 +54,7 @@
 		632C928428E23F6100F6C631 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		632C928828E241B000F6C631 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		632C928928E2437D00F6C631 /* F1-Stats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "F1-Stats-Info.plist"; sourceTree = SOURCE_ROOT; };
-		632C928A28E243CA00F6C631 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		632C928A28E243CA00F6C631 /* EnvironmentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentData.swift; sourceTree = "<group>"; };
 		632C928D28E251A400F6C631 /* RacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesView.swift; sourceTree = "<group>"; };
 		632C928F28E2529000F6C631 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		632C92A928E25C8400F6C631 /* f1regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = f1regular.ttf; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				632C928328E23F5300F6C631 /* Services */,
 				632C927F28E23DA400F6C631 /* Model */,
 				632C926F28E2032E00F6C631 /* F1_StatsApp.swift */,
-				632C928A28E243CA00F6C631 /* Environment.swift */,
+				632C928A28E243CA00F6C631 /* EnvironmentData.swift */,
 				632C927328E2033000F6C631 /* Assets.xcassets */,
 				632C928828E241B000F6C631 /* Config.xcconfig */,
 				632C928928E2437D00F6C631 /* F1-Stats-Info.plist */,
@@ -267,7 +267,7 @@
 				632C92AE28E25EB700F6C631 /* RacesModel.swift in Sources */,
 				63EB62DB28E497BA0016161F /* InfoCircuitView.swift in Sources */,
 				632C928E28E251A400F6C631 /* RacesView.swift in Sources */,
-				632C928B28E243CA00F6C631 /* Environment.swift in Sources */,
+				632C928B28E243CA00F6C631 /* EnvironmentData.swift in Sources */,
 				632C928528E23F6200F6C631 /* APIService.swift in Sources */,
 				631BA83E28E2E45400BEF91F /* CircuitsModel.swift in Sources */,
 				632C927028E2032E00F6C631 /* F1_StatsApp.swift in Sources */,

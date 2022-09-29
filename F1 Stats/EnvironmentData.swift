@@ -8,7 +8,7 @@
 import Foundation
 
 
-public enum Environment {
+public enum EnvironmentData {
     enum Keys {
         static let apiKey = "API_KEY"
         static let apiKeyHeader = "API_KEY_HEADER"
@@ -29,63 +29,63 @@ public enum Environment {
     }()
     
     static let apiKey: String = {
-        guard let apiKeyString = Environment.infoDictionary[Keys.apiKey] as? String else {
+        guard let apiKeyString = EnvironmentData.infoDictionary[Keys.apiKey] as? String else {
             fatalError("Api key not set")
         }
         return apiKeyString
     }()
     
     static let apiKeyHeader: String = {
-        guard let apiKeyHeaderString = Environment.infoDictionary[Keys.apiKeyHeader] as? String else {
+        guard let apiKeyHeaderString = EnvironmentData.infoDictionary[Keys.apiKeyHeader] as? String else {
             fatalError("Api key header not set")
         }
         return apiKeyHeaderString
     }()
     
     static let urlBase: String = {
-        guard let urlBaseString = Environment.infoDictionary[Keys.urlBase] as? String else {
+        guard let urlBaseString = EnvironmentData.infoDictionary[Keys.urlBase] as? String else {
             fatalError("Url base not set")
         }
         return urlBaseString
     }()
     
     static let urlRankDrivers: String = {
-        guard let urlRankDriversString = Environment.infoDictionary[Keys.urlRankDrivers] as? String else {
+        guard let urlRankDriversString = EnvironmentData.infoDictionary[Keys.urlRankDrivers] as? String else {
             fatalError("Url rank drivers not set")
         }
         return urlRankDriversString
     }()
     
     static let urlRankTeams: String = {
-        guard let urlRankTeamsString = Environment.infoDictionary[Keys.urlRankTeams] as? String else {
+        guard let urlRankTeamsString = EnvironmentData.infoDictionary[Keys.urlRankTeams] as? String else {
             fatalError("Url rank teams not set")
         }
         return urlRankTeamsString
     }()
     
     static let urlRaces: String = {
-        guard let urlRacesString = Environment.infoDictionary[Keys.urlRaces] as? String else {
+        guard let urlRacesString = EnvironmentData.infoDictionary[Keys.urlRaces] as? String else {
             fatalError("Url races not set")
         }
         return urlRacesString
     }()
     
     static let urlPastRaces: String = {
-        guard let urlPastRacesString = Environment.infoDictionary[Keys.urlPastRaces] as? String else {
+        guard let urlPastRacesString = EnvironmentData.infoDictionary[Keys.urlPastRaces] as? String else {
             fatalError("Url races not set")
         }
         return urlPastRacesString
     }()
     
     static let urlCircuits: String = {
-        guard let urlCircuitsString = Environment.infoDictionary[Keys.urlCircuits] as? String else {
+        guard let urlCircuitsString = EnvironmentData.infoDictionary[Keys.urlCircuits] as? String else {
             fatalError("Url circuits not set")
         }
         return urlCircuitsString
     }()
     
     static let urlDriver: String = {
-        guard let urlDriverString = Environment.infoDictionary[Keys.urlDriver] as? String else {
+        guard let urlDriverString = EnvironmentData.infoDictionary[Keys.urlDriver] as? String else {
             fatalError("Url driver not set")
         }
         return urlDriverString

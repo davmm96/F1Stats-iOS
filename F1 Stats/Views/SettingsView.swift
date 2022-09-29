@@ -14,7 +14,7 @@ struct SettingsView: View {
     
     var body: some View {
         NavigationStack{
-            VStack{
+            VStack(alignment: .center, spacing: 30){
                 Toggle("Music 🎶", isOn: $playMusic)
                     .onChange(of: playMusic) { (value) in
                         soundPlayer.playPause(playPreference: value)
@@ -23,7 +23,7 @@ struct SettingsView: View {
                 Toggle("Dark theme", isOn: $darkMode)
                 
             }.navigationTitle("Settings")
-                .padding()
+                .padding(80)
             Spacer()
         }
     }
