@@ -17,9 +17,9 @@ struct RankView: View {
                 Section(header: Text("Drivers").font(Font.custom( "Formula1-Display-Regular", size: 12))){
                     ForEach(apiService.rankingDrivers, id: \.position) {
                         position in
-                        NavigationLink(destination: DriverDetailView(idDriver: position.driver.id)){
-                            RankDriverItemView(position: position)
-                        }
+                            NavigationLink(destination: DriverDetailView(idDriver: position.driver.id)){
+                                RankDriverItemView(position: position)
+                            }
                     }
                 }
                 

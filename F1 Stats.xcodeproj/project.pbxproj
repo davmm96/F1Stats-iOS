@@ -27,10 +27,13 @@
 		632C92AB28E25C8400F6C631 /* f1regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632C92A928E25C8400F6C631 /* f1regular.ttf */; };
 		632C92AC28E25C8400F6C631 /* f1bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632C92AA28E25C8400F6C631 /* f1bold.ttf */; };
 		632C92AE28E25EB700F6C631 /* RacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C92AD28E25EB700F6C631 /* RacesModel.swift */; };
+		633CA24128E5BCD40059D539 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633CA24028E5BCD40059D539 /* SettingsView.swift */; };
 		63EB62D928E497320016161F /* TitleOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB62D828E497320016161F /* TitleOverlay.swift */; };
 		63EB62DB28E497BA0016161F /* InfoCircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB62DA28E497BA0016161F /* InfoCircuitView.swift */; };
 		63EB62DD28E4AE450016161F /* DriverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB62DC28E4AE450016161F /* DriverDetailView.swift */; };
 		63EB62E128E4AFE30016161F /* DriverDetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB62E028E4AFE30016161F /* DriverDetailDataModel.swift */; };
+		63EB630D28E58D870016161F /* f1theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63EB630C28E58D870016161F /* f1theme.mp3 */; };
+		63EB631228E597460016161F /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB631128E597460016161F /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,10 +60,13 @@
 		632C92A928E25C8400F6C631 /* f1regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = f1regular.ttf; sourceTree = "<group>"; };
 		632C92AA28E25C8400F6C631 /* f1bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = f1bold.ttf; sourceTree = "<group>"; };
 		632C92AD28E25EB700F6C631 /* RacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesModel.swift; sourceTree = "<group>"; };
+		633CA24028E5BCD40059D539 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		63EB62D828E497320016161F /* TitleOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleOverlay.swift; sourceTree = "<group>"; };
 		63EB62DA28E497BA0016161F /* InfoCircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCircuitView.swift; sourceTree = "<group>"; };
 		63EB62DC28E4AE450016161F /* DriverDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailView.swift; sourceTree = "<group>"; };
 		63EB62E028E4AFE30016161F /* DriverDetailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailDataModel.swift; sourceTree = "<group>"; };
+		63EB630C28E58D870016161F /* f1theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = f1theme.mp3; sourceTree = "<group>"; };
+		63EB631128E597460016161F /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 		632C926E28E2032E00F6C631 /* F1 Stats */ = {
 			isa = PBXGroup;
 			children = (
+				63EB631028E596E30016161F /* Songs */,
 				632C92A828E25C6400F6C631 /* fonts */,
 				632C928C28E2513900F6C631 /* Views */,
 				632C928328E23F5300F6C631 /* Services */,
@@ -130,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				632C928428E23F6100F6C631 /* APIService.swift */,
+				63EB631128E597460016161F /* SoundManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 				631BA84728E3675300BEF91F /* RaceDetailView.swift */,
 				63EB62D828E497320016161F /* TitleOverlay.swift */,
 				63EB62DA28E497BA0016161F /* InfoCircuitView.swift */,
+				633CA24028E5BCD40059D539 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +170,14 @@
 				632C92A928E25C8400F6C631 /* f1regular.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		63EB631028E596E30016161F /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				63EB630C28E58D870016161F /* f1theme.mp3 */,
+			);
+			path = Songs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +240,7 @@
 			files = (
 				632C927728E2033000F6C631 /* Preview Assets.xcassets in Resources */,
 				632C92AB28E25C8400F6C631 /* f1regular.ttf in Resources */,
+				63EB630D28E58D870016161F /* f1theme.mp3 in Resources */,
 				632C92AC28E25C8400F6C631 /* f1bold.ttf in Resources */,
 				632C927428E2033000F6C631 /* Assets.xcassets in Resources */,
 			);
@@ -240,6 +258,7 @@
 				632C927228E2032E00F6C631 /* RankView.swift in Sources */,
 				631BA84228E3466C00BEF91F /* RankTeamItemView.swift in Sources */,
 				631BA84628E361FB00BEF91F /* CircuitItemView.swift in Sources */,
+				63EB631228E597460016161F /* SoundManager.swift in Sources */,
 				631BA84028E3421400BEF91F /* RankDriverItemView.swift in Sources */,
 				631BA84A28E43FB200BEF91F /* RaceChooseView.swift in Sources */,
 				63EB62D928E497320016161F /* TitleOverlay.swift in Sources */,
@@ -255,6 +274,7 @@
 				632C928128E23DB600F6C631 /* RankModel.swift in Sources */,
 				631BA84428E3527100BEF91F /* RaceItemView.swift in Sources */,
 				63EB62DD28E4AE450016161F /* DriverDetailView.swift in Sources */,
+				633CA24128E5BCD40059D539 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

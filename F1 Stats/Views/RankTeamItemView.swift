@@ -37,8 +37,23 @@ struct RankTeamItemView: View {
             
             Spacer()
             
-            Text(position.points.flatMap(String.init) ?? "0")
-                .font(Font.custom( "Formula1-Display-Regular", size: 15))
+            VStack {
+                if(position.position == 1)
+                {
+                    Text("\(Int(position.points ?? 0)) PTS" )
+                        .font(Font.custom( "Formula1-Display-Bold", size: 12))
+                        .padding(8)
+                }
+                else
+                {
+                    Text("\(Int(position.points ?? 0)) PTS" )
+                        .font(Font.custom( "Formula1-Display-Regular", size: 11))
+                        .padding(7)
+                }
+            }.background(Color(white: 0.9))
+            .opacity(0.8)
+            .cornerRadius(14.0)
+            .padding(4)
         }
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 enum TypeRaces: String, CaseIterable{
     case upcoming = "Upcoming"
@@ -33,6 +34,8 @@ struct RacesView: View {
         }
     }
 }
+
+
 
 struct RacesView_Previews: PreviewProvider {
     static var previews: some View {
