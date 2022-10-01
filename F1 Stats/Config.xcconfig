@@ -9,7 +9,7 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 //API KEY
-API_KEY = 7cbd4ede846c2a26675a0ac08b25cc2d
+API_KEY = 034da704a4fcc0f36f7f6c59b86529ff
 API_KEY_HEADER = x-apisports-key
 
 //URL

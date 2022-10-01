@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct RaceChooseView: View {
-    @StateObject var apiService: APIService = APIService()
+    @StateObject var viewModel: RacesViewModel = RacesViewModel()
     var selectedRace: TypeRaces
     
     var body: some View {
         switch selectedRace{
             case .upcoming:
                 List{
-                    ForEach(apiService.races, id: \.id) {
+                    ForEach(viewModel.races, id: \.id) {
                         race in
                         NavigationLink(destination: RaceDetailView(race: race)){
                             RaceItemView(race: race)
                         }
                     }
                 }.onAppear{
-                    if(apiService.races.isEmpty){
-                        apiService.getRaces()
+                    if(viewModel.races.isEmpty){
+                        viewModel.getRaces()
                     }
                     
                 }
@@ -31,15 +31,15 @@ struct RaceChooseView: View {
                 
             case .past:
                 List{
-                    ForEach(apiService.pastRaces, id: \.id) {
+                    ForEach(viewModel.pastRaces, id: \.id) {
                         race in
                         NavigationLink(destination: RaceDetailView(race: race)){
                             RaceItemView(race: race)
                         }
                     }
                 }.onAppear{
-                    if(apiService.pastRaces.isEmpty){
-                        apiService.getPastRaces()
+                    if(viewModel.pastRaces.isEmpty){
+                        viewModel.getPastRaces()
                     }
                 }
                 .listStyle(.plain)

@@ -2,7 +2,7 @@
 //  RankModel.swift
 //  F1 Stats
 //
-//  Created by David Melero Morant on 26/9/22.
+//  Created by David Melero Morant on 10/9/22.
 //
 
 import Foundation
@@ -37,7 +37,23 @@ struct DriverDetailDataModel: Decodable  {
     let career_points: String?
     let teams: [HistoricTeamDataModel]
     
-    static let example = DriverDetailDataModel(id: 1, name: "", abbr: "", image: "", nationality: "", country: CountryDataModel(name: "", code: ""), birthdate: "", birthplace: "", number: 1, grands_prix_entered: 1, world_championships: 1, podiums: 1, highest_race_finish: HighestRaceDataModel(position: 0, number: 0), highest_grid_position: 0, career_points: "", teams: [])
+    static let example = DriverDetailDataModel(
+                            id: 1,
+                            name: "",
+                            abbr: "",
+                            image: "",
+                            nationality: "",
+                            country: CountryDataModel(name: "", code: ""),
+                            birthdate: "",
+                            birthplace: "",
+                            number: 1,
+                            grands_prix_entered: 1,
+                            world_championships: 1,
+                            podiums: 1,
+                            highest_race_finish: HighestRaceDataModel(position: 0, number: 0),
+                            highest_grid_position: 0,
+                            career_points: "",
+                            teams: [])
 }
 
 struct CountryDataModel: Decodable {

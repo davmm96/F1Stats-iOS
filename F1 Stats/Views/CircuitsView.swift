@@ -9,19 +9,19 @@ import SwiftUI
 
 struct CircuitsView: View {
 
-    @StateObject var apiService: APIService = APIService()
+    @StateObject var viewModel: CircuitsViewModel = CircuitsViewModel()
     
     var body: some View {
         NavigationStack{
                 List {
-                    ForEach(apiService.circuits, id: \.id) {
+                    ForEach(viewModel.circuits, id: \.id) {
                         circuit in CircuitItemView(circuit: circuit)
                     }
                 }.navigationTitle("Circuits")
                 .listStyle(InsetGroupedListStyle())
             }.onAppear{
-                if(apiService.circuits.isEmpty){
-                    apiService.getCircuits()
+                if(viewModel.circuits.isEmpty){
+                    viewModel.getCircuits()
                 }
             }
         }

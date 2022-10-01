@@ -20,7 +20,6 @@
 		632C927428E2033000F6C631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C927328E2033000F6C631 /* Assets.xcassets */; };
 		632C927728E2033000F6C631 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C927628E2033000F6C631 /* Preview Assets.xcassets */; };
 		632C928128E23DB600F6C631 /* RankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928028E23DB600F6C631 /* RankModel.swift */; };
-		632C928528E23F6200F6C631 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928428E23F6100F6C631 /* APIService.swift */; };
 		632C928B28E243CA00F6C631 /* EnvironmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928A28E243CA00F6C631 /* EnvironmentData.swift */; };
 		632C928E28E251A400F6C631 /* RacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928D28E251A400F6C631 /* RacesView.swift */; };
 		632C929028E2529000F6C631 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C928F28E2529000F6C631 /* MainView.swift */; };
@@ -29,6 +28,10 @@
 		632C92AE28E25EB700F6C631 /* RacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C92AD28E25EB700F6C631 /* RacesModel.swift */; };
 		633CA24128E5BCD40059D539 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633CA24028E5BCD40059D539 /* SettingsView.swift */; };
 		633CA24328E60CB00059D539 /* VersionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633CA24228E60CB00059D539 /* VersionsViewController.swift */; };
+		634F72C328E8B4F5001F30A4 /* RacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F72C228E8B4F5001F30A4 /* RacesViewModel.swift */; };
+		634F72C528E8B693001F30A4 /* RankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F72C428E8B693001F30A4 /* RankViewModel.swift */; };
+		634F72C728E8B792001F30A4 /* CircuitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F72C628E8B792001F30A4 /* CircuitsViewModel.swift */; };
+		634F72C928E8B7E6001F30A4 /* DriverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F72C828E8B7E6001F30A4 /* DriverViewModel.swift */; };
 		63EB62D928E497320016161F /* TitleOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB62D828E497320016161F /* TitleOverlay.swift */; };
 		63EB62DB28E497BA0016161F /* InfoCircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB62DA28E497BA0016161F /* InfoCircuitView.swift */; };
 		63EB62DD28E4AE450016161F /* DriverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB62DC28E4AE450016161F /* DriverDetailView.swift */; };
@@ -54,7 +57,6 @@
 		632C927328E2033000F6C631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632C927628E2033000F6C631 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		632C928028E23DB600F6C631 /* RankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankModel.swift; sourceTree = "<group>"; };
-		632C928428E23F6100F6C631 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		632C928828E241B000F6C631 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		632C928928E2437D00F6C631 /* F1-Stats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "F1-Stats-Info.plist"; sourceTree = SOURCE_ROOT; };
 		632C928A28E243CA00F6C631 /* EnvironmentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentData.swift; sourceTree = "<group>"; };
@@ -65,6 +67,10 @@
 		632C92AD28E25EB700F6C631 /* RacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesModel.swift; sourceTree = "<group>"; };
 		633CA24028E5BCD40059D539 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		633CA24228E60CB00059D539 /* VersionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionsViewController.swift; sourceTree = "<group>"; };
+		634F72C228E8B4F5001F30A4 /* RacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesViewModel.swift; sourceTree = "<group>"; };
+		634F72C428E8B693001F30A4 /* RankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewModel.swift; sourceTree = "<group>"; };
+		634F72C628E8B792001F30A4 /* CircuitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitsViewModel.swift; sourceTree = "<group>"; };
+		634F72C828E8B7E6001F30A4 /* DriverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewModel.swift; sourceTree = "<group>"; };
 		63EB62D828E497320016161F /* TitleOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleOverlay.swift; sourceTree = "<group>"; };
 		63EB62DA28E497BA0016161F /* InfoCircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCircuitView.swift; sourceTree = "<group>"; };
 		63EB62DC28E4AE450016161F /* DriverDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailView.swift; sourceTree = "<group>"; };
@@ -128,8 +134,9 @@
 				63EB631028E596E30016161F /* Songs */,
 				632C92A828E25C6400F6C631 /* fonts */,
 				632C928C28E2513900F6C631 /* Views */,
-				632C928328E23F5300F6C631 /* Services */,
+				634F72C128E8B48E001F30A4 /* ViewModel */,
 				632C927F28E23DA400F6C631 /* Model */,
+				632C928328E23F5300F6C631 /* Services */,
 				632C926F28E2032E00F6C631 /* F1_StatsApp.swift */,
 				632C928A28E243CA00F6C631 /* EnvironmentData.swift */,
 				632C927328E2033000F6C631 /* Assets.xcassets */,
@@ -162,7 +169,6 @@
 		632C928328E23F5300F6C631 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				632C928428E23F6100F6C631 /* APIService.swift */,
 				63EB631128E597460016161F /* SoundManager.swift */,
 			);
 			path = Services;
@@ -197,6 +203,17 @@
 				632C92A928E25C8400F6C631 /* f1regular.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		634F72C128E8B48E001F30A4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				634F72C228E8B4F5001F30A4 /* RacesViewModel.swift */,
+				634F72C428E8B693001F30A4 /* RankViewModel.swift */,
+				634F72C628E8B792001F30A4 /* CircuitsViewModel.swift */,
+				634F72C828E8B7E6001F30A4 /* DriverViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		63EB631028E596E30016161F /* Songs */ = {
@@ -326,25 +343,28 @@
 			files = (
 				631BA84828E3675300BEF91F /* RaceDetailView.swift in Sources */,
 				631BA83C28E2E37300BEF91F /* CircuitsView.swift in Sources */,
+				634F72C728E8B792001F30A4 /* CircuitsViewModel.swift in Sources */,
 				632C927228E2032E00F6C631 /* RankView.swift in Sources */,
+				634F72C928E8B7E6001F30A4 /* DriverViewModel.swift in Sources */,
 				631BA84228E3466C00BEF91F /* RankTeamItemView.swift in Sources */,
 				631BA84628E361FB00BEF91F /* CircuitItemView.swift in Sources */,
 				63EB631228E597460016161F /* SoundManager.swift in Sources */,
 				631BA84028E3421400BEF91F /* RankDriverItemView.swift in Sources */,
 				631BA84A28E43FB200BEF91F /* RaceChooseView.swift in Sources */,
 				63EB62D928E497320016161F /* TitleOverlay.swift in Sources */,
+				634F72C328E8B4F5001F30A4 /* RacesViewModel.swift in Sources */,
 				63EB62E128E4AFE30016161F /* DriverDetailDataModel.swift in Sources */,
 				632C929028E2529000F6C631 /* MainView.swift in Sources */,
 				632C92AE28E25EB700F6C631 /* RacesModel.swift in Sources */,
 				63EB62DB28E497BA0016161F /* InfoCircuitView.swift in Sources */,
 				632C928E28E251A400F6C631 /* RacesView.swift in Sources */,
 				632C928B28E243CA00F6C631 /* EnvironmentData.swift in Sources */,
-				632C928528E23F6200F6C631 /* APIService.swift in Sources */,
 				631BA83E28E2E45400BEF91F /* CircuitsModel.swift in Sources */,
 				632C927028E2032E00F6C631 /* F1_StatsApp.swift in Sources */,
 				632C928128E23DB600F6C631 /* RankModel.swift in Sources */,
 				633CA24328E60CB00059D539 /* VersionsViewController.swift in Sources */,
 				631BA84428E3527100BEF91F /* RaceItemView.swift in Sources */,
+				634F72C528E8B693001F30A4 /* RankViewModel.swift in Sources */,
 				63EB62DD28E4AE450016161F /* DriverDetailView.swift in Sources */,
 				633CA24128E5BCD40059D539 /* SettingsView.swift in Sources */,
 			);

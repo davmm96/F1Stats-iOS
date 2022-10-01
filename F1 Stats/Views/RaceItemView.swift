@@ -2,7 +2,7 @@
 //  RaceItemView.swift
 //  F1 Stats
 //
-//  Created by David Melero Morant on 27/9/22.
+//  Created by David Melero Morant on 22/9/22.
 //
 
 import SwiftUI

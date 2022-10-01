@@ -2,7 +2,7 @@
 //  MainView.swift
 //  F1 Stats
 //
-//  Created by David Melero Morant on 26/9/22.
+//  Created by David Melero Morant on 01/9/22.
 //
 
 import SwiftUI
@@ -50,6 +50,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView().environmentObject(APIService())
+        MainView()
     }
 }

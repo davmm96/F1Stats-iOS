@@ -2,14 +2,14 @@
 //  DriverDetailView.swift
 //  F1 Stats
 //
-//  Created by David Melero Morant on 28/9/22.
+//  Created by David Melero Morant on 20/9/22.
 //
 
 import SwiftUI
 
 struct DriverDetailView: View {
     
-    @StateObject var apiService: APIService = APIService()
+    @StateObject var viewModel: DriverViewModel = DriverViewModel()
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     var idDriver: Int
     
@@ -29,28 +29,28 @@ struct DriverDetailView: View {
     
     var compactContent: some View {
         ScrollView{
-            if(!apiService.driver.isEmpty){
+            if(!viewModel.driver.isEmpty){
                 VStack(alignment: .leading){
                     HStack{
                         VStack(alignment: .leading){
-                            Text(apiService.driver[0].name ?? "Default name")
+                            Text(viewModel.driver[0].name ?? "Default name")
                                 .font(Font.custom( "Formula1-Display-Bold", size: 23))
                                 .foregroundColor(.white)
                                 .padding(.bottom, 5)
                             
                             HStack
                             {
-                                Text(apiService.driver[0].number.flatMap(String.init) ?? "Nº")
+                                Text(viewModel.driver[0].number.flatMap(String.init) ?? "Nº")
                                     .font(Font.custom( "Formula1-Display-Bold", size: 16))
                                     .foregroundColor(.white)
                                 
-                                Text(apiService.driver[0].country?.name ?? "Default country")
+                                Text(viewModel.driver[0].country?.name ?? "Default country")
                                     .font(Font.custom( "Formula1-Display-Regular", size: 16))
                                     .foregroundColor(.white)
                             }
                         }.padding(.leading, 20)
                         Spacer()
-                        AsyncImage(url: URL(string: apiService.driver[0].image ?? "")){ phase in
+                        AsyncImage(url: URL(string: viewModel.driver[0].image ?? "")){ phase in
                             switch phase {
                             case .empty:
                                 ProgressView()
@@ -77,7 +77,7 @@ struct DriverDetailView: View {
                             .foregroundColor(Color("GrayLabel"))
                             .padding(.bottom, 2)
                         
-                        Text(apiService.driver[0].world_championships.flatMap(String.init) ?? "0")
+                        Text(viewModel.driver[0].world_championships.flatMap(String.init) ?? "0")
                             .font(Font.custom( "Formula1-Display-Bold", size: 60))
                     }.padding(.bottom, 30)
                     
@@ -89,7 +89,7 @@ struct DriverDetailView: View {
                                 .foregroundColor(Color("GrayLabel"))
                                 .padding(.bottom, 4)
                             
-                            Text(apiService.driver[0].podiums.flatMap(String.init) ?? "0")
+                            Text(viewModel.driver[0].podiums.flatMap(String.init) ?? "0")
                                 .font(Font.custom( "Formula1-Display-Bold", size: 35))
                         }
                         
@@ -101,8 +101,8 @@ struct DriverDetailView: View {
                                 .foregroundColor(Color("GrayLabel"))
                                 .padding(.bottom, 4)
                             
-                            if(apiService.driver[0].highest_race_finish?.position == 1){
-                                Text(apiService.driver[0].highest_race_finish?.number.flatMap(String.init) ?? "0")
+                            if(viewModel.driver[0].highest_race_finish?.position == 1){
+                                Text(viewModel.driver[0].highest_race_finish?.number.flatMap(String.init) ?? "0")
                                     .font(Font.custom( "Formula1-Display-Bold", size: 35))
                             }
                             else
@@ -122,7 +122,7 @@ struct DriverDetailView: View {
                                 .foregroundColor(Color("GrayLabel"))
                                 .padding(.bottom, 4)
                             
-                            Text(apiService.driver[0].grands_prix_entered.flatMap(String.init) ?? "0")
+                            Text(viewModel.driver[0].grands_prix_entered.flatMap(String.init) ?? "0")
                                 .font(Font.custom( "Formula1-Display-Bold", size: 35))
                         }
                         
@@ -134,7 +134,7 @@ struct DriverDetailView: View {
                                 .foregroundColor(Color("GrayLabel"))
                                 .padding(.bottom, 4)
                             
-                            Text(apiService.driver[0].career_points ?? "0")
+                            Text(viewModel.driver[0].career_points ?? "0")
                                 .font(Font.custom( "Formula1-Display-Bold", size: 35))
                         }
                         
@@ -143,7 +143,7 @@ struct DriverDetailView: View {
                  }.padding()
             }
             }.onAppear{
-                apiService.getDriver(id: idDriver)
+                viewModel.getDriver(id: idDriver)
             }
             .ignoresSafeArea()
     }
@@ -151,28 +151,28 @@ struct DriverDetailView: View {
     var regularContent: some View {
         ScrollView{
             
-            if(!apiService.driver.isEmpty){
+            if(!viewModel.driver.isEmpty){
                 VStack(alignment: .leading){
                     HStack{
                         VStack(alignment: .leading){
-                            Text(apiService.driver[0].name ?? "Default name")
+                            Text(viewModel.driver[0].name ?? "Default name")
                                 .font(Font.custom( "Formula1-Display-Bold", size: 50))
                                 .foregroundColor(.white)
                                 .padding(.bottom, 10)
                             
                             HStack
                             {
-                                Text(apiService.driver[0].number.flatMap(String.init) ?? "Nº")
+                                Text(viewModel.driver[0].number.flatMap(String.init) ?? "Nº")
                                     .font(Font.custom( "Formula1-Display-Bold", size: 20))
                                     .foregroundColor(.white)
                                 
-                                Text(apiService.driver[0].country?.name ?? "Default country")
+                                Text(viewModel.driver[0].country?.name ?? "Default country")
                                     .font(Font.custom( "Formula1-Display-Regular", size: 20))
                                     .foregroundColor(.white)
                             }
                         }.padding(.leading, 40)
                         Spacer()
-                        AsyncImage(url: URL(string: apiService.driver[0].image ?? "")){ phase in
+                        AsyncImage(url: URL(string: viewModel.driver[0].image ?? "")){ phase in
                             switch phase {
                             case .empty:
                                 ProgressView()
@@ -198,7 +198,7 @@ struct DriverDetailView: View {
                             .foregroundColor(Color("GrayLabel"))
                             .padding(.bottom, 2)
                         
-                        Text(apiService.driver[0].world_championships.flatMap(String.init) ?? "0")
+                        Text(viewModel.driver[0].world_championships.flatMap(String.init) ?? "0")
                             .font(Font.custom( "Formula1-Display-Bold", size: 70))
                     }.padding(.init(top: 20, leading: 30, bottom: 20, trailing: 0))
                     
@@ -210,7 +210,7 @@ struct DriverDetailView: View {
                                 .foregroundColor(Color("GrayLabel"))
                                 .padding(.bottom, 4)
                             
-                            Text(apiService.driver[0].podiums.flatMap(String.init) ?? "0")
+                            Text(viewModel.driver[0].podiums.flatMap(String.init) ?? "0")
                                 .font(Font.custom( "Formula1-Display-Bold", size: 40))
                         }
                         
@@ -222,8 +222,8 @@ struct DriverDetailView: View {
                                 .foregroundColor(Color("GrayLabel"))
                                 .padding(.bottom, 4)
                             
-                            if(apiService.driver[0].highest_race_finish?.position == 1){
-                                Text(apiService.driver[0].highest_race_finish?.number.flatMap(String.init) ?? "0")
+                            if(viewModel.driver[0].highest_race_finish?.position == 1){
+                                Text(viewModel.driver[0].highest_race_finish?.number.flatMap(String.init) ?? "0")
                                     .font(Font.custom( "Formula1-Display-Bold", size: 40))
                             }
                             else
@@ -243,7 +243,7 @@ struct DriverDetailView: View {
                                 .foregroundColor(Color("GrayLabel"))
                                 .padding(.bottom, 4)
                             
-                            Text(apiService.driver[0].grands_prix_entered.flatMap(String.init) ?? "0")
+                            Text(viewModel.driver[0].grands_prix_entered.flatMap(String.init) ?? "0")
                                 .font(Font.custom( "Formula1-Display-Bold", size: 40))
                         }
                         
@@ -255,7 +255,7 @@ struct DriverDetailView: View {
                                 .foregroundColor(Color("GrayLabel"))
                                 .padding(.bottom, 4)
                             
-                            Text(apiService.driver[0].career_points ?? "0")
+                            Text(viewModel.driver[0].career_points ?? "0")
                                 .font(Font.custom( "Formula1-Display-Bold", size: 40))
                         }
                         
@@ -264,7 +264,7 @@ struct DriverDetailView: View {
                  }.padding()
             }
             }.onAppear{
-                apiService.getDriver(id: idDriver)
+                viewModel.getDriver(id: idDriver)
             }
             .ignoresSafeArea()
     }

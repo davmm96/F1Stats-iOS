@@ -2,14 +2,14 @@
 //  ContentView.swift
 //  F1 Stats
 //
-//  Created by David Melero Morant on 26/9/22.
+//  Created by David Melero Morant on 02/9/22.
 //
 
 import SwiftUI
 
 struct RankView: View {
 
-    @StateObject var apiService: APIService = APIService()
+    @StateObject var viewModel: RankViewModel = RankViewModel()
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
 
     var horizontallyConstrained: Bool {
@@ -30,7 +30,7 @@ struct RankView: View {
         NavigationStack{
             List{
                 Section(header: Text("Drivers").font(Font.custom( "Formula1-Display-Regular", size: 12))){
-                    ForEach(apiService.rankingDrivers, id: \.position) {
+                    ForEach(viewModel.rankingDrivers, id: \.position) {
                         position in
                             NavigationLink(destination: DriverDetailView(idDriver: position.driver.id)){
                                 RankDriverItemView(position: position)
@@ -39,15 +39,15 @@ struct RankView: View {
                 }
                 
                 Section(header: Text("Teams").font(Font.custom( "Formula1-Display-Regular", size: 12))){
-                    ForEach(apiService.rankingTeams, id: \.position) {
+                    ForEach(viewModel.rankingTeams, id: \.position) {
                         position in RankTeamItemView(position: position)
                     }
                 }
             }.navigationTitle("Rank")
         }.onAppear{
-            if(apiService.rankingDrivers.isEmpty) {
-                apiService.getRank()
-                apiService.getRankTeams()
+            if(viewModel.rankingDrivers.isEmpty) {
+                viewModel.getRankDrivers()
+                viewModel.getRankTeams()
             } 
         }
     }
@@ -56,7 +56,7 @@ struct RankView: View {
         NavigationStack{
             List{
                 Section(header: Text("Drivers").font(Font.custom( "Formula1-Display-Regular", size: 16))){
-                    ForEach(apiService.rankingDrivers, id: \.position) {
+                    ForEach(viewModel.rankingDrivers, id: \.position) {
                         position in
                             NavigationLink(destination: DriverDetailView(idDriver: position.driver.id)){
                                 RankDriverItemView(position: position)
@@ -65,15 +65,15 @@ struct RankView: View {
                 }.padding(.init(top: 30, leading: 90, bottom: 0, trailing: 90))
                 
                 Section(header: Text("Teams").font(Font.custom( "Formula1-Display-Regular", size: 16))){
-                    ForEach(apiService.rankingTeams, id: \.position) {
+                    ForEach(viewModel.rankingTeams, id: \.position) {
                         position in RankTeamItemView(position: position)
                     }
                 }.padding(.init(top: 30, leading: 90, bottom: 0, trailing: 90))
             }.navigationTitle("Rank")
                 
         }.onAppear{
-            apiService.getRank()
-            apiService.getRankTeams()
+            viewModel.getRankDrivers()
+            viewModel.getRankTeams()
         }
     }
 }
