@@ -18,7 +18,6 @@ struct MainView: View {
         
         UINavigationBar.appearance().titleTextAttributes = [.font : UIFont(name: "Formula1-Display-Regular", size: 15)!, .foregroundColor: UIColor.red]
         
-        print(playMusic)
         if(playMusic){
             soundPlayer.playPause(playPreference: playMusic)
         }

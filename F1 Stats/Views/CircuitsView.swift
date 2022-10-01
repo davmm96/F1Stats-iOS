@@ -20,7 +20,9 @@ struct CircuitsView: View {
                 }.navigationTitle("Circuits")
                 .listStyle(InsetGroupedListStyle())
             }.onAppear{
-                apiService.getCircuits()
+                if(apiService.circuits.isEmpty){
+                    apiService.getCircuits()
+                }
             }
         }
 }

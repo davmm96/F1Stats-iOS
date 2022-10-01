@@ -21,7 +21,12 @@ struct RaceChooseView: View {
                             RaceItemView(race: race)
                         }
                     }
-                }.onAppear{apiService.getRaces()}
+                }.onAppear{
+                    if(apiService.races.isEmpty){
+                        apiService.getRaces()
+                    }
+                    
+                }
                 .listStyle(.plain)
                 
             case .past:
@@ -32,7 +37,11 @@ struct RaceChooseView: View {
                             RaceItemView(race: race)
                         }
                     }
-                }.onAppear{apiService.getPastRaces()}
+                }.onAppear{
+                    if(apiService.pastRaces.isEmpty){
+                        apiService.getPastRaces()
+                    }
+                }
                 .listStyle(.plain)
         }
     }

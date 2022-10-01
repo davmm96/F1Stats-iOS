@@ -31,7 +31,7 @@ struct InfoCircuitView: View {
                     .font(Font.custom( "Formula1-Display-Bold", size: 18))
                 Text("\(Int(laps))")
                     .font(Font.custom( "Formula1-Display-Regular", size: 18))
-            }.padding(.top, 30)
+            }.padding(.top, 15)
         }
     }
 }

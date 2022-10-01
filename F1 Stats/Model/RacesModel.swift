@@ -2,7 +2,7 @@
 //  RankModel.swift
 //  F1 Stats
 //
-//  Created by David Melero Morant on 26/9/22.
+//  Created by David Melero Morant on 06/9/22.
 //
 
 import Foundation

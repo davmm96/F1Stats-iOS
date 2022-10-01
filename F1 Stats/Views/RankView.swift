@@ -45,8 +45,10 @@ struct RankView: View {
                 }
             }.navigationTitle("Rank")
         }.onAppear{
-            apiService.getRank()
-            apiService.getRankTeams()
+            if(apiService.rankingDrivers.isEmpty) {
+                apiService.getRank()
+                apiService.getRankTeams()
+            } 
         }
     }
     
